@@ -1,0 +1,280 @@
+/*
+2018年2月4日整理
+公用css样式：包含头部，导航，主容器，以及一些公用样式如：m-t-10 等于 margin-top:10px
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#e6ecf0;
+}
+
+/*全局公用样式*/
+
+.f-l{
+    float: left;
+}
+
+.f-r{
+    float: right;
+}
+.p-r-25{
+    padding-right: 25px;
+}
+.m-t--10{
+    margin-top: 10px;
+}
+.l-h-60{
+    line-height:60px;
+}
+.b-f{
+    background: #ffffff;
+}
+.m-t-50{
+    margin-top: 50px;
+}
+.m-l-30{
+    margin-left: 30px;
+}
+.m-l-20{
+    margin-left: 20px;
+}
+.p-l-20{
+    padding-left: 20px;
+}
+
+/*
+顶部样式
+*/
+.head{
+    height: 250px;
+    background-image: url("../img/head.png");
+    /*background: #999999;*/
+    background-size: 100% 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 220px;
+    margin: 0 auto 0 auto;
+}
+
+.img-round{
+    width: 120px;
+    height:120px;
+    border-radius: 120px 120px 120px 120px;
+}
+
+.banner table{
+    padding-top: 40px;
+    margin-left: 30px;
+
+}
+
+.nickname{
+    font-family: 微软雅黑;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.username{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #EEEEEE;
+    line-height: 30px;
+}
+
+.sex{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    /*性别女背景色*/
+    background: #fcb9ba;
+    /*
+    !*性别男背景色*!
+    background: #00b7ee;
+    */
+    width: 22px;
+    height:22px;
+    border-radius: 22px 22px 22px 22px;
+
+}
+
+.lv{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background: #f5894e;
+    height:0.1px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.school{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #ffffff;
+    /*font-weight: bold;*/
+    text-align: center;
+    background: #08c25b;
+    width: 13%;/*宽度不能根据字数变化而变化，把div改成span可以解决，但会有一些小问题。待定*/
+    height: 22px;
+    border-radius: 8px 8px 8px 8px;
+    margin-left: 15px;
+}
+
+.signature{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+/*
+导航样式*/
+
+.outer {
+    width:100%;
+}
+ul{
+    list-style-type: none;
+}
+#tab1 {
+    overflow:hidden;
+    zoom:1;
+    background:#fff;
+    height: 50px;
+
+}
+#tab1 li {
+    float:left;
+    color:#333333;
+    height:48px;
+    cursor:pointer;
+    line-height:60px;
+    padding:0 35px;
+}
+#tab1 li.current {
+    border-bottom: solid 2px #00a0e9;
+
+}
+#content {
+    border-top-width:0;
+}
+#content ul {
+    line-height:25px;
+    display:none;
+    margin:0 30px;
+    padding:10px 0;
+}
+.nav-text{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #ededed;
+}
+
+/*二级导航*/
+.cnt-nav {
+    overflow:hidden;
+    zoom:1;
+    background:#fff;
+    /*height: 50px;*/
+    /*border:1px solid #000;*/
+}
+.cnt-nav dt {
+    float:left;
+    color:#333333;
+    height:48px;
+    cursor:pointer;
+    line-height:48px;
+    padding:0 70px;
+
+}
+
+/*
+主容器*/
+
+.contain{
+    width: 1170px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    /*background: #08c25b;*/
+}
+.cnt{
+    width: 1170px;
+    /*height: 600px;*/
+    background: #e6ecf0;
+    /*margin: 20px auto 0 auto;*/
+}
+
+
+
+
+/*二级容器*/
+/*#tab2 {
+    overflow:hidden;
+    zoom:1;
+    background:#fff;
+    height: 50px;
+
+}*/
+/*#tab2 dt {
+    float:left;
+    color:#333333;
+    height:48px;
+    cursor:pointer;
+    line-height:60px;
+    padding:0 35px;
+}*/
+#tab2 dt.current {
+    border-bottom: solid 2px #00a0e9;
+
+}
+#cnt2 {
+    border-top-width:0;
+    width: 740px;
+}
+#cnt2 p{
+    display:none;
+
+}
+.cnt3{
+    width: 740px;
+}
+
+/*
+2018/2/5*/
+.top{
+    height: 76px;
+    /*background: #fadae8;*/
+    background-image: url("../img/top.png");
+    background-size: 100% 100%;
+}
+.top_box {
+    background-color: #DDDDDD;
+    font-size: 25px;
+    /*margin-bottom: -10px;*/
+    text-align: center;
+    /*11.14加*/
+    height: 50px;
+    padding-top: 10px;
+}
+.top_box_text1{
+    font-size: 16px;
+    font-family: 方正姚体;
+    color: #333300;
+    padding-left: 20px;
+}
+
+/*
+2018/2/25*/
+.loading{
+    font-size: 16px;
+    /*font-family: 黑体;*/
+    padding-right: 80px;
+}

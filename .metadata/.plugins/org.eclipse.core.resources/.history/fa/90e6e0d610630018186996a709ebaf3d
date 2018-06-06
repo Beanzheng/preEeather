@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/H-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css"/>
+    <!--<link rel="stylesheet" href="../css/bootstrap.min.css">-->
+</head>
+<body>
+<div class="register">
+    <div class="register-b">
+        <div class="text-c f-14"style="padding-top: 130px;font-family: '微软雅黑';color: #858585;">
+            <a href="index.html">返回首页</a>
+        </div>
+        <form  class="form form-horizontal" id="demoform" method="post">
+            <div class="mt-30">
+                <label><span style="margin-left: 77px;">用</span><span style="margin-left: 3%;">户</span><span style="margin-left: 3%">名</span></label>
+                <input  class="input-text size-M" style="margin-left: 25px;" type="text" id="phonenumber" placeholder="请输入姓名" name="userName"/>
+                <span id="phonelabel"></span>
+            </div>
+            <div class="mt-30">
+                <label><span style="margin-left: 77px;">密</span><span style="margin-left: 55px">码</span></label>
+                <input type="password"  class="input-text size-M" style="margin-left: 25px" id="password" placeholder="请设置密码" name="password">
+					<span id="passwdlabel">
+								<span class="ml-10" style="color: #ff2b00;">*</span>
+								<span class="f-12 ml-5" style="color: #141414;">长度要求在6-16为之间</span>
+							</span>
+            </div>
+            <div class="mt-30">
+                <label><span style="margin-left: 77px;">验</span><span style="margin-left: 3%;">证</span><span style="margin-left: 3%">码</span></label>
+                <input style="width: 120px;margin-left: 23px" class="input-text size-M" type="text" name="email" placeholder="请输入验证码">
+                <input type="button" id="btn1" value="获取验证码"  style="width: 100px;height: 30px"/>
+            </div>
+            <div class="text-c" style="margin-top: 40px">   
+                    <input type="submit" class="btn btn-warning"  style="width: 260px ">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#phonenumber").focusout(function () {
+            var vaule = $.trim($("#phonenumber").val());
+            if(vaule.length==0){
+                $("#phonelabel").html("姓名不能为空");
+                $("#phonelabel").addClass("myerror")
+            }
+            if(vaule.length>0&&vaule.length!=11){
+                $("#phonelabel").html("命名格式不对");
+                $("#phonelabel").addClass("myerror")
+            }
+            if(vaule.length==11){
+                $("#phonelabel").html("");
+            }
+        })
+        $("#password").focusout(function () {
+            var vaule = $.trim($("#password").val());
+            if(vaule.length==0){
+                $("#passwdlabel").html("密码不能为空");
+                $("#passwdlabel").addClass("myerror")
+            }
+            if(vaule.length>0&&vaule.length<6){
+                $("#passwdlabel").html("密码长度至少6个字符");
+                $("#passwdlabel").addClass("myerror")
+            }
+            if(vaule.length>16){
+                $("#passwdlabel").html("密码长度不能超过16个字符");
+                $("#passwdlabel").addClass("myerror")
+            }
+            if(vaule.length>=6&&vaule.length<=16){
+                $("#passwdlabel").html("");
+            }
+        })
+        $("#IDnumber").focusout(function () {
+            var vaule = $.trim($("#IDnumber").val());
+            if(vaule.length==0){
+                $("#IDlabel").html("身份证不能为空");
+                $("#IDlabel").addClass("myerror");
+            }
+            if(vaule.length>0&&vaule.length!=18){
+                $("#IDlabel").html("身份证号长度不正确");
+                $("#IDlabel").addClass("myerror")
+            }
+            if(vaule.length==18){
+                $("#IDlabel").html("");
+            }
+        })
+        $("#btn1").click(function () {
+            var countdown=60;
+            var obj=$("#btn1");//获得jquery对象
+            settime(obj);//调用时间函数
+            function settime(obj) {
+                if (countdown == 0) {
+                    obj.attr('disabled',false);
+                    obj.val("获取验证码");
+                    countdown = 60;//重置计时器为60秒
+                    return;
+                } else {
+                    obj.attr('disabled',true);
+                    obj.val(countdown + "秒");
+                    countdown--;
+                }
+                setTimeout(function() {
+                            settime(obj) }
+                        ,1000)
+            }
+        });
+    })
+</script>
+</body>
+</html>

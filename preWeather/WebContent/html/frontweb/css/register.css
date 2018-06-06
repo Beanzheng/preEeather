@@ -1,0 +1,24 @@
+/*全局*/
+*{margin: 0;padding: 0;  }
+html{width: 100%;}
+body{width: 100%;height:1000px;background: url("../img/login2.png") no-repeat; background-size: 100% 100%;font-family: 微软雅黑;}
+
+
+/* 注册部分*/
+/*注册页面*/
+.register{height: 735px;width: 900px; padding-top: 54px; background-image: url("");background-repeat: no-repeat;
+    background-size: 100% 100%;margin: 10px auto 0 auto; position: relative}
+.register-b{z-index: 1;width: 635px;height: 516px;;
+    background-repeat:no-repeat;background-size: 100% 100%;margin:0 auto;}
+/*注册表单部分*/
+.myerror{color: red;margin-left: 10px}
+#demoform>div>label,.checkbox>div>label{color: #1f1e1e;font-family: '微软雅黑'; font-size: 18px;vertical-align: middle}
+#demoform>div>span{font-family: '微软雅黑'; font-size: 12px}
+#demoform>div>input{width: 232px; height: 30px; border-radius: 5px; font-size: 14px;vertical-align: middle;outline:none}
+#btn1{background-image: url("../images/圆角矩形 5 拷贝 5.png");background-size: 100% 100%; font-size:16px;
+    color: #1f1e1e;font-family: '微软雅黑';position: relative; left: 10px;overflow: hidden;border: none}
+.foot{position: absolute; bottom: 40px;left: 360px;}
+/*修改密码表单*/
+#btn2{background-image: url("../images/验证码.png");background-size: 100% 100%; font-size:16px;
+    color: #1f1e1e;font-family: '微软雅黑';position: relative; left: 10px; border: 1px solid gainsboro}
+

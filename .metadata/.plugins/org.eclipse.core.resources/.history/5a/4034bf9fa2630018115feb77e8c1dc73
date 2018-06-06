@@ -1,0 +1,102 @@
+package pre.Test;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.List;
+
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import pre.DAO.UserDAO;
+import pre.DAO.WeatherDAO;
+import pre.DAOImpl.UserDAOImpl;
+import pre.DAOImpl.WeatherDAOImpl;
+import pre.DB.DBConection;
+import pre.ORM.xts;
+
+public class UserTest {
+	private static DBConection db = new DBConection();
+	private static Connection conn = null;
+	private static UserDAO dao = null;
+	private static WeatherDAO wdao = null;
+	private static xts ts =null;
+	@BeforeClass
+	public static void beforeclass() throws Exception{
+		conn =db.getConn();
+		dao = new UserDAOImpl(conn);
+		wdao = new WeatherDAOImpl(conn);
+		
+	}
+	/**
+	 * 测试数据库连接
+	 */
+	@Test
+	public void TestDB() throws Exception{
+		String sql = "select * from user";
+		PreparedStatement pst = conn.prepareStatement(sql);
+		ResultSet rs = pst.executeQuery();
+		if (rs.next()) {
+			System.out.println("测试通过");
+		}else {
+			System.out.println("连接失败");
+		}
+	}
+	/**
+	 * 测试用户注册
+	 * @throws Exception
+	 */
+	@Test
+	public void TestUserDAO_resigter() throws Exception{
+		String userName = "asaadw";
+		String password = "123";
+		String sex = "男";
+		Assert.assertTrue(dao.resigter(userName, password, sex));
+		
+	}
+	/**
+	 * 测试用户登录
+	 * @throws Exception
+	 */
+	@Test
+	public void TestUserDAO_login() throws Exception{
+		String userName = "asaadw";
+		String password = "123";
+		Assert.assertTrue(dao.login(userName, password));
+	}
+	@Test
+	public void TestWeatherDAO_getWeatherDetail() throws Exception{
+		String cityName= "都江堰";
+		List<Object> list = wdao.getWeatherDetail(cityName);
+		for(Object i: list ){
+			System.out.println(i);
+		}
+	}
+	@Test
+	public void TestWeatherDAO_getXTSDetail() throws Exception{
+		List<Object> list = wdao.getXTSDeatail();
+		for(Object i: list ){
+			System.out.println(i);
+		}
+	}
+	@Test
+	public void TestWeatherDAO_getTimeCityWeather() throws Exception{
+		String cityName = "都江堰";
+		int cityTime = 7;
+		List<Object> list = wdao.getTimeCityWeather(cityName, cityTime);
+		for(Object i: list ){
+			System.out.println(i);
+		}
+	}
+	@Test
+	public void TestTurnJson() throws Exception{
+		
+	}
+	@AfterClass
+	public static void afterclass() throws Exception{
+		
+	}
+}

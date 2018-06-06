@@ -1,0 +1,370 @@
+/* CSS Document */
+#main-container{
+
+    height:1200px;
+    width:1335px;}
+
+#header{
+    background:url(背景3.jpg);
+    height:120px;
+    width:1335px;}
+
+#header-a{
+    background:#CCCCCC;
+    height:25px;
+    width:620px;
+    float:right;
+    font-family:"黑体";}
+
+#header-b{
+    font-family:"方正舒体";
+    font-size:67px;
+    color:#666666;
+    position:absolute;
+    left:400px;}
+
+
+#header-c{
+    font-family:Algerian;
+    font-size:46px;
+
+}
+
+
+#header-d{
+    height:40px;
+    width:250px;
+    background:#999999;
+    border:solid 1px;
+    border-color:#666666;
+    position:absolute;
+    right:50px;
+    top:80px;}
+
+#header-e{
+    height:33px;
+    width:244px;
+    background:#FFFFFF;
+    position:absolute;
+    top:1px;
+    right:3px;}
+
+#header-f{
+    height:32px;
+    width:243px;}
+
+
+#header-g{
+    position:absolute;
+    top:1px;
+    right:-3px;}
+
+
+#header-h{
+    height:35px;
+    width:1335px;
+    background:#FF99FF;
+    font-family:"黑体";
+    font-size:26px;
+    border-radius:20px;
+}
+
+
+
+#main{
+
+    height:1050px;
+    width:1335px;}
+
+a:hover{
+    color:#FFFFCC;
+}
+
+a:active{
+    color:#9933FF;}
+
+a{
+    color:#000000;
+    text-decoration:none;}
+
+
+#left-d{
+    background:#FF99FF;
+    padding:10px;
+    width:220px;
+    height:18px;
+    border-radius:20px;
+}
+
+
+#left-e{
+    font-family:"华文行楷";
+    font-size:30px}
+
+
+#left-f{
+    font-family:"黑体";
+    font-size:20px;
+
+}
+
+#left-g{
+    text-decoration:line-through;
+    color:#333333;
+    font-size:18px;}
+
+#left-h{
+    color:#FF0000;
+    font-size:22px;}
+
+
+
+#left-j{
+    color:#000000;
+    font-family:"黑体";
+    font-size:18px;
+    background:#FFFF66;}
+
+
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    width:150px;
+    border-bottom:1px solid #99FF66;
+    font-size:20px;
+    text-align:center;
+}
+
+ul li{
+    position:relative;}
+
+
+li ul{
+    position:absolute;
+    left:119px;
+    top:0;
+    display:none;
+}
+
+ul li a{
+    width:150px;
+    display:block;
+    text-decoration:none;
+    color:#006699;
+    background:#CCCCCC;
+    padding:5px;
+    border:10x solid #993366;
+    border-bottom:0px;
+}
+
+ul li a:hover{
+    background-color:#CC3333;
+    color:#CC9900;}
+
+
+*html ul li{
+    float:left;
+    height:1%;}
+
+*html ul li a{
+    height:1%;}
+
+li:hover ul,li.over ul{
+    display:block;}
+
+
+
+
+#zuo{
+
+    height:1015px;
+    width:250px;}
+
+
+#zuo-a{
+
+    height:300px;
+    width:250px;}
+
+
+#zuo-b{
+
+    height:300px;
+    width:250px;
+    position:absolute;
+    top:520px;}
+
+
+
+#zuo-c{
+    height:300px;
+    width:250px;
+    position:absolute;
+    top:875px;}
+
+
+
+
+#center{
+
+    height:1010px;
+    width:840px;
+    position:absolute;
+    left:260px;
+    top:165px;}
+
+
+
+#center-a{
+
+    height:330px;
+    width:840px;}
+
+
+#center-b{
+
+    height:330px;
+    width:840px;
+}
+
+
+
+#center-c{
+
+    height:330px;
+    width:840px;}
+
+
+
+#center-d{
+    background:#CCFFFF;
+    height:300px;
+    width:300px;
+    position:absolute;
+    left:50px;}
+
+
+#center-e{
+    height:300px;
+    width:400px;
+    position:absolute;
+    left:350px;
+    top:1px;}
+
+
+#center-f{
+    font-family:"新宋体";
+    color:#CC6666;
+    font-size:15px;}
+
+#center-g{
+    font-family:"幼圆", "方正姚体";
+    font-size:50px;}
+
+
+#center-h{
+    font-family:"华文琥珀";
+    font-size:36px;
+    color:#996699;}
+
+#center-j{
+
+    height:150px;
+    width:150px;
+    position:absolute;
+    left:100px;}
+
+
+#center-k{
+
+    height:250px;
+    width:250px;
+    position:absolute;
+    left:320px;
+    top:370px;}
+
+#center-l{
+
+    height:250px;
+    width:250px;
+    position:absolute;
+    left:530px;
+    top:370px;}
+
+
+
+#center-z{
+
+    height:250px;
+    width:250px;
+    position:absolute;
+    left:50px;
+    bottom:90px;}
+
+
+#center-x{
+
+    height:250px;
+    width:250px;
+    position:absolute;
+    left:320px;
+    bottom:90px;}
+
+#center-y{
+
+    height:250px;
+    width:250px;
+    position:absolute;
+    left:600px;
+    bottom:90px;}
+
+
+
+#right-content{
+
+    height:1015px;
+    width:242px;
+    position:absolute;
+    left:1100px;
+    top:163px;}
+
+
+#right-a{
+
+    height:300px;
+    width:242px;}
+
+
+#right-b{
+
+    height:250px;
+    width:242px;}
+
+
+#right-d{
+    font-family:"黑体";}
+
+#right-c{
+
+    height:465px;
+    width:242px;}
+
+
+#footer{
+    background:#999999;
+    height:30px;
+    width:1335px;
+    position:absolute;
+    top:1200px;}
+
+
+#footer-a{
+    color:#000000;
+    font-family:"黑体";
+    font-size:18px;
+
+}
+
+

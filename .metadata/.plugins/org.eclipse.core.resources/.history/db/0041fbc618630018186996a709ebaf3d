@@ -1,0 +1,8 @@
+package pre.ORM;
+
+public class xts {
+	private int tid;
+	private String cityName;
+	private String title;
+	private String content;
+}

@@ -1,0 +1,37 @@
+package pre.ORM;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class weather {
+	
+	public String getCityName() {
+		return cityName;
+	}
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+	public String getCityTime() {
+		return cityTime;
+	}
+	public void setCityTime(String cityTime) {
+		this.cityTime = cityTime;
+	}
+	public String getCityTemp() {
+		return cityTemp;
+	}
+	public void setCityTemp(String cityTemp) {
+		this.cityTemp = cityTemp;
+	}
+	@JsonIgnore
+	public int getWid() {
+		return wid;
+	}
+	@JsonIgnore
+	public void setWid(int wid) {
+		this.wid = wid;
+	}
+	private int wid;
+	private String cityName;
+	private String cityTime;
+	private String cityTemp;
+}

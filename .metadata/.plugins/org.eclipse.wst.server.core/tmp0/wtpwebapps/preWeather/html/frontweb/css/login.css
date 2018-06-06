@@ -1,0 +1,42 @@
+/*全局*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+}
+body{
+
+    background: url("../img/login2.png") no-repeat;
+    background-size: 100% 100%;
+    font-family: 微软雅黑;
+}
+
+/* 注册部分*/
+/*注册页面*/
+.register{
+    height: 735px;
+    width: 915px;
+    /*background-color: #005580;*/
+    background-image: url("../images/register-bg-un(915,736).png");
+    margin: 0 auto;
+}
+.register-b{
+    z-index: 1;
+    width: 635px;
+    height: 516px;
+    background-image: url("../images/register-b(635,516).png");
+    margin:0 auto;
+}
+
+
+/*登录*/
+.login_box{
+    background-image: url("../images/组 4.png");
+    background-size: 100% 100%;
+    background-size: cover;
+    margin: 50px auto 0;
+    width: 1466px;
+    height: 954px;
+}

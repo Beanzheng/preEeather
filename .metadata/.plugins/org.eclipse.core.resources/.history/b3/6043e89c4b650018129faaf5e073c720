@@ -1,0 +1,15 @@
+<style>
+.aa{
+	border: 1px solid black;
+
+}
+li{
+	list-style-type: none;
+	float: left;
+}
+</style>
+
+
+<div class="a">
+
+</div>

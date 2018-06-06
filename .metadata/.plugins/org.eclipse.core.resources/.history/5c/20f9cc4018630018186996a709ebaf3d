@@ -1,0 +1,7 @@
+package pre.ORM;
+
+public class weather {
+	private String cityName;
+	private String cityTime;
+	private String cityTemp;
+}

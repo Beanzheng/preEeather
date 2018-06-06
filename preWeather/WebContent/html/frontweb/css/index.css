@@ -1,0 +1,113 @@
+/*
+2018/1/30
+
+*/
+
+.Edit_box_personal{
+    z-index: 1;
+    width: 932px;
+    height: 973px;
+    background: url("");
+    background-size: 100% 100%;
+    /*margin-top: -10px;*/
+    text-align: center;
+    /*margin: 0 auto;11.14注释*/
+    margin: 10px auto 0 auto;
+    /*position: absolute;
+    z-index: 999;*/
+
+}
+.certificate_box{
+    background: url("");
+    width: 822px;
+    height: 705px;
+    /*margin-top: 5%;*/
+    margin-top: 19px;
+    /*margin-left: 4%;*/
+    margin-left: 55px;
+    position: absolute;
+    z-index: 9;
+}
+.bd{ /*中间整个框*/
+    width:785px;
+    height: 500px;
+    margin-top:160px;
+}
+.top{/*左边内容*/
+    width:690px;
+    height: 470px;
+    overflow:hidden;
+    float:left;
+    padding:0 30px 30px 40px;
+}
+.top ul{
+    /*margin-top: 100px;*/
+    width:690px;
+}
+.top ul li{
+    list-style: none;
+    font-size:20px;
+}
+
+.top ul .li{
+    margin-top:5px;
+}
+.top ul li table tr td{
+    width:213px;
+    height:28px;}
+
+
+.scroll{/*全部滚动条*/
+    width:16px;
+    margin-top: 20px;
+    height:477px;
+    float:left;
+    background:url("") no-repeat;
+    position:relative;
+
+}
+.scroll p{/*小滚动条*/
+    width:11px;
+    height:100px;
+    background:url("") no-repeat;
+    cursor:auto;
+    margin-top: 22px;
+    margin-left: 3px;
+    position:absolute;
+
+}
+
+.move_text1{
+    float: left;
+    font-size: 18px;
+    color: #595757;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.certificate_cnt{
+    /*background: url("../images/certificate_cnt.png") no-repeat;*/
+    background: url("") no-repeat;
+}
+.move_text2{
+    font-size: 18px;
+    font-family: 黑体;
+    color: #6e6c6c;
+    padding-right: 28px;
+    text-align: center;
+
+}
+.move_img{
+    /*width: 200px;*/
+    height: 300px;
+    /*margin-top: 10px;*/
+    padding-right: 40px;
+}
+.move_detail{
+    color: #333333;
+    text-align: center;
+}
+.certificate_foot{
+    text-align: center;
+    padding-top: 850px;
+}
+

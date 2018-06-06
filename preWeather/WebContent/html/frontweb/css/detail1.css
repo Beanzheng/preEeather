@@ -1,0 +1,51 @@
+#center-a{
+
+    height:330px;
+    width:840px;}
+#center-d{
+    /*background:#CCFFFF;*/
+    height:300px;
+    width:300px;
+    /*position:absolute;
+    left:50px;*/}
+#center-e{
+    color: #333333;
+    height:300px;
+    width:400px;
+    position:absolute;
+    left:450px;
+    top:370px;}
+
+#left-f{
+    font-family: 华文行楷;
+    color: #330000;
+    font-size:30px;
+
+}
+#center-g{
+    font-family: "方正姚体";
+    font-size:40px;}
+#left-g{
+    text-decoration:underline;
+    color:#333333;
+    font-size:18px;}
+#left-h{
+    color:#9d9d9d;
+    }
+
+
+
+#left-j{
+    color:#000000;
+    font-family:"黑体";
+    font-size:18px;
+    background:#FFFF66;}
+
+#right-a{
+    height:300px;
+    width:500px;
+    position: absolute;
+    top:400px;
+    right: 1px;
+
+}

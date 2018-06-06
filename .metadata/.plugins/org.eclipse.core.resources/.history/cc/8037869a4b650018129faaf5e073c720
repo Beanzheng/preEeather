@@ -1,0 +1,18 @@
+<style>
+.aa{
+	border: 1px solid black;
+
+}
+li{
+	list-style-type: none;
+	float: left;
+}
+</style>
+
+
+<div class="a">
+<a href="" class="aa"><li class="b">link<span>|</span></li></a>
+<a href="" class="aa"><li class="b">link</li></a><span>|</span>
+<a href="" class="aa"><li class="b">link</li></a><span>|</span>
+<a href="" class="aa"><li class="b">link</li></a><span></span>
+</div>

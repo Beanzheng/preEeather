@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/fans.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<!--顶部开始-->
+<div class="head">
+    <div class="banner">
+        <table>
+            <tr>
+                <div class="top_box ">
+                    <b>DIY天气预报系统</b><span class="top_box_text1">您的私人天气预报系统</span>
+                    <div class="f-r loading"><a href="login.html"> 登录</a>*****<a href="register.html">注册</a> </div>
+                </div>
+            </tr>
+            <br><br>
+            <tr>
+                <td rowspan="4">
+                    <div class="p-r-25">
+                        <img  src="../img/fan-head2.jpg" class="img-round">
+                    </div>
+                </td>
+                <td colspan="3" class="nickname">Anna</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="username">@安娜</td>
+            </tr>
+            <tr>
+                <td width="3%"><div class="sex">女</div></td>
+                <td width="4%" class="lv">lv.2</td>
+                <td width="93%"><div class="school">超级SVIP用户</div></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="signature">
+                    风景在路上，而我在路上......
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--顶部结束-->
+
+<!--nav部分开始-->
+<div class="outer">
+    <ul id="tab1" class="nav-text">
+        <li class="current">主页</li>
+        <li>历史记录</li>
+        <li>私人预报</li>
+        <li>设置</li>
+
+    </ul>
+</div>
+<!--nav部分结束-->
+
+<!--主容器内容开始-->
+<div  id="content" class="contain">
+    <div class="cnt">
+        <!--主页内容-->
+        <ul style="display: block">
+            <dl class="cnt-nav nav-text">
+                <table>
+                            <tr>
+                                <td><div class="move_text1"><b>热门城市最新天气推送...</b></div></td>
+                                <td colspan="2" style="text-align: right;color: #333;">
+                                    <input type="text" placeholder="请输入城市关键字" class="input-text ac_input" name="search_text" value="" id="search_text" autocomplete="off" style="width:180px">
+                                    <button type="submit" class="btn btn-danger" id="search_button" style="margin-top:-4px; margin-left: -5px;border-Radius:0px; ">搜索</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="images certificate_cnt" style="height: 130px;width: 25%">
+                                    <a href="detail.html"><img src="../img/shanghai.jpg" class="move_img" style="margin-left: 7px" height="80px" width="300px"></a>
+                                    <p class="move_text2">上海</p>
+                                </td>
+                                <td class="images certificate_cnt" style="height: 130px;width: 25%">
+                                    <a href="detail.html"><img src="../img/beijing1.jpg" class="move_img" style="margin-left: 7px" height="80px" width="300px"></a>
+                                    <p class="move_text2">北京</p>
+                                </td>
+                                <td class="images certificate_cnt" style="height: 130px;width: 25%">
+                                    <a href="detail.html"><img src="../img/guangzhou1.jpg" class="move_img" style="margin-left: 7px" height="80px" width="300px"></a>
+                                    <p class="move_text2">广州</p>
+                                </td>
+                                <td style="color: #999;font-family: 幼圆;font-size: 28px"><a>查看更多>>>></a></td>
+                            </tr>
+                            <tr>
+                                <td class="move_detail"><button class="btn btn-danger" style="margin-left: -25px"><a href="detail.html" style="text-decoration: none;color: #ffffff">查看详情</a></button></td>
+                                <td class="move_detail"><button class="btn btn-danger" style="margin-left: -25px"><a href="detail.html" style="text-decoration: none;color: #ffffff">查看详情</a></button></td>
+                                <td class="move_detail"><button class="btn btn-danger" style="margin-left: -25px">查看详情</button></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                <table style="margin-top: 50px;">
+                    <tr>
+                        <td><div class="move_text1"><b>每日推荐...</b></div></td>
+                        <td colspan="2" style="text-align: right">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="images certificate_cnt" style="height: 130px;width: 25%">
+                            <a href="detail.html"><img src="../img/shanghai.jpg" class="move_img" style="margin-left: 7px" height="80px" width="300px"></a>
+                            <p class="move_text2">天津</p>
+                        </td>
+                        <td class="images certificate_cnt" style="height: 130px;width: 25%">
+                            <a href="detail.html"><img src="../img/beijing1.jpg" class="move_img" style="margin-left: 7px" height="80px" width="300px"></a>
+                            <p class="move_text2">成都</p>
+                        </td>
+                        <td class="images certificate_cnt" style="height: 130px;width: 25%">
+                            <a href="detail.html"><img src="../img/guangzhou.jpg" class="move_img" style="margin-left: 7px" height="80px" width="300px"></a>
+                            <p class="move_text2">深圳</p>
+                        </td>
+                        <td style="color: #999;font-family: 幼圆;font-size: 28px"><a>查看更多>>>></a></td>
+                    </tr>
+                    <tr>
+                        <td class="move_detail"><button class="btn btn-danger" style="margin-left: -25px">查看详情</button></td>
+                        <td class="move_detail"><button class="btn btn-danger" style="margin-left: -25px"><a href="detail.html" style="text-decoration: none;color: #ffffff">查看详情</a></button></td>
+                        <td class="move_detail"><button class="btn btn-danger" style="margin-left: -25px">查看详情</button></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </dl>
+        </ul>
+
+        <!--历史记录内容-->
+        <ul>
+            暂无历史记录
+        </ul>
+
+        <!--私人影院内容-->
+        <ul>
+            <div class="f-l b-f">
+                <table class="l-h-60 p-l-20">
+                    <tr>
+                        <td width="300px">收藏夹</td>
+                        <td width="30px"><img src="../img/add.png"></td>
+                    </tr>
+                    <tr>
+                        <td>默认收藏夹</td>
+                        <td >11</td>
+                    </tr>
+                    <tr>
+                        <td>美剧</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>我的最爱</td>
+                        <td>63</td>
+                    </tr>
+                    <tr>
+                        <td>......</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="f-r b-f">
+                <dl id="tab2" class="cnt-nav nav-text">
+                    <dt class="current">动态</dt>
+                    <dt>推荐</dt>
+                    <dt>投稿</dt>
+                    <dt>会员</dt>
+                </dl>
+                <div id="cnt2" style="border-top: solid 10px #e6ecf0">
+                    <!--动态容器-->
+                    <p style="display: block">呀，你收藏、关注内容（博主）暂无新动态哦*******，快去看看其他的吧</p>
+
+                    <!--私人推荐容器-->
+                    <p>私人推荐内容</p>
+
+                    <!--投稿容器-->
+                    <p>投稿内容</p>
+
+                    <!--会员容器-->
+                    <p>会员内容</p>
+                </div>
+                <!--<div style="border-top: solid 10px #e6ecf0">
+                    5555555
+                </div>
+                <div style="border-top: solid 10px #e6ecf0">
+                    333333333
+                </div>
+                <div style="border-top: solid 10px #e6ecf0">
+                    5555555
+                </div>-->
+            </div>
+        </ul>
+
+        <!--设置内容-->
+        <ul>
+            设置
+        </ul>
+
+        <!--粉丝内容-->
+        <ul>
+            <div class="f-l b-f">
+                <table class="l-h-60 p-l-20">
+                    <tr>
+                        <td width="300px">我的粉丝</td>
+                        <td width="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>粉丝</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>黑名单</td>
+                        <td>22</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="f-r b-f cnt3">
+                <p class="all-fan m-l-30 m-t--10">全部粉丝</p>
+                <table class="m-t-50 m-l-30">
+                        <tr>
+                            <td rowspan="4">
+                                <div class="p-r-25">
+                                    <img  src="../img/fan-head1.jpg" class="fan-img">
+                                </div>
+                            </td>
+                            <td colspan="3" class="fan-nickname">小学寻</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="fan-username">@as</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="fan-signature">
+                                我们都生活在阴沟里面，但总有人仰望天空。
+                            </td>
+                        </tr>
+                </table>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/2.png" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">昵称啊</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@nic</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            哈哈哈，就是好想笑啊。
+                        </td>
+                    </tr>
+                </table>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/fan-head1.jpg" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">小学寻</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@as</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            我们都生活在阴沟里面，但总有人仰望天空。
+                        </td>
+                    </tr>
+                </table>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/2.png" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">昵称啊</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@nic</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            哈哈哈，就是好想笑啊。
+                        </td>
+                    </tr>
+                </table>
+                <!--<div style="border-top: solid 10px #e6ecf0">
+                    333333333
+                </div>
+                <div style="border-top: solid 10px #e6ecf0">
+                    5555555
+                </div>-->
+            </div>
+        </ul>
+
+        <!--关注内容-->
+        <ul>
+            <div class="f-l b-f">
+                <table class="l-h-60 p-l-20">
+                    <tr>
+                        <td width="300px">我的关注</td>
+                        <td width="30px"><img src="../img/add.png"></td>
+                    </tr>
+                    <tr>
+                        <td>全部关注</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>特别关心</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>自定义分组</td>
+                        <td>33</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="f-r b-f cnt3">
+                <p class="all-fan m-l-30 m-t--10">全部关注</p>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/fan-head.jpg" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">呀呀呀</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@yyy</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            我真的不知道说什么
+                        </td>
+                    </tr>
+                </table>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/fan-head2.jpg" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">你是年少</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@anan</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            你是年少的欢喜，喜欢的少年是你
+                        </td>
+                    </tr>
+                </table>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/fan-head.jpg" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">呀呀呀</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@yyy</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            我真的不知道说什么
+                        </td>
+                    </tr>
+                </table>
+                <table class="m-t-50 m-l-30">
+                    <tr>
+                        <td rowspan="4">
+                            <div class="p-r-25">
+                                <img  src="../img/fan-head2.jpg" class="fan-img">
+                            </div>
+                        </td>
+                        <td colspan="3" class="fan-nickname">你是年少</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-username">@anan</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fan-signature">
+                            你是年少的欢喜，喜欢的少年是你
+                        </td>
+                    </tr>
+                </table>
+                <!--<div style="border-top: solid 10px #e6ecf0">
+                    333333333
+                </div>
+                <div style="border-top: solid 10px #e6ecf0">
+                    5555555
+                </div>-->
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!--主容器结束-->
+
+
+
+<!--整体js-->
+<script src="../js/jquery.js"></script>
+
+<!--页面js-->
+<script>
+    /*一级导航JS*/
+    $(function(){
+        window.onload = function()
+        {
+            var $li = $('#tab1 li');
+            var $ul = $('#content ul');
+            var $dt = $('#tab2 dt');
+            var $p = $('#cnt2 p');
+
+
+            $dt.click(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $dt.removeClass();
+                $this.addClass('current');
+                $p.css('display','none');
+                $p.eq($t).css('display','block');
+            });
+
+            $li.click(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('current');
+                $ul.css('display','none');
+                $ul.eq($t).css('display','block');
+            })
+        }
+    });
+
+    /* /!*二级导航JS*!/
+     $(function(){
+     window.onload = function()
+     {
+     var $dt = $('#tab2 dt');
+     var $p = $('#cnt3 p');
+
+
+     $dt.click(function(){
+     var $this = $(this);
+     var $t = $this.index();
+     $dt.removeClass();
+     $this.addClass('current');
+     $p.css('display','none');
+     $p.eq($t).css('display','block');
+     })
+     }
+     });
+     */
+</script>
+
+</body>
+</html>

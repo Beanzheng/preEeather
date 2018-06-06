@@ -1,0 +1,33 @@
+package pre.ORM;
+
+public class weather {
+	
+	public String getCityName() {
+		return cityName;
+	}
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+	public String getCityTime() {
+		return cityTime;
+	}
+	public void setCityTime(String cityTime) {
+		this.cityTime = cityTime;
+	}
+	public String getCityTemp() {
+		return cityTemp;
+	}
+	public void setCityTemp(String cityTemp) {
+		this.cityTemp = cityTemp;
+	}
+	public int getWid() {
+		return wid;
+	}
+	public void setWid(int wid) {
+		this.wid = wid;
+	}
+	private int wid;
+	private String cityName;
+	private String cityTime;
+	private String cityTemp;
+}
