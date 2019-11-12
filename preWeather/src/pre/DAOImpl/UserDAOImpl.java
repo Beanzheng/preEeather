@@ -7,7 +7,7 @@ import pre.DAO.UserDAO;
 
 public class UserDAOImpl extends AbstractDAOImpl implements UserDAO{
 
-	public UserDAOImpl(Connection conn) {
+	public UserDAOImpl(Connection conn) { 
 		super(conn);
 		
 	}
